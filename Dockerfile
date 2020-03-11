@@ -1,9 +1,9 @@
-FROM google/nodejs
+FROM node:current
 
 # Define working directory.
 WORKDIR /data
 
 # Define default command.
 EXPOSE 3000
-CMD []
+CMD ["node"]
 ENTRYPOINT ["/nodejs/bin/npm", "start"]
